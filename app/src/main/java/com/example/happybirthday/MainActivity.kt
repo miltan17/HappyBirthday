@@ -2,11 +2,16 @@ package com.example.happybirthday
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.happybirthday.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : DrawerBaseActivity() {
+    lateinit var activityMainBinding: ActivityMainBinding
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        //Some Change To Check
+        activityMainBinding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(activityMainBinding.root)
+        allocateActivityTitle("Home")
     }
 }
