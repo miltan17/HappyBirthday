@@ -36,20 +36,18 @@ open class DrawerBaseActivity : AppCompatActivity(), NavigationView.OnNavigation
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         drawerLayout.closeDrawer(GravityCompat.START)
-/*
+
         when (item.itemId){
-            R.id.ic_home -> {
+            R.id.menu_home -> {
                 var mainActivity = Intent(this, MainActivity::class.java)
                 startActivity(mainActivity)
-                item.isChecked = true
             }
 
-            R.id.ic_customers -> {
-                var customersActivity = Intent(this, CustomersActivity::class.java)
-                startActivity(customersActivity)
-                item.isChecked = true
+            R.id.menu_dice_roller -> {
+                var diceRollerActivity = Intent(this, DiceRollerActivity::class.java)
+                startActivity(diceRollerActivity)
             }
-
+/*
             R.id.ic_orders -> {
                 var ordersActivity = Intent(this, OrdersActivity::class.java)
                 startActivity(ordersActivity)
@@ -61,9 +59,8 @@ open class DrawerBaseActivity : AppCompatActivity(), NavigationView.OnNavigation
                 startActivity(brandsActivity)
                 item.isChecked = true
             }
-
+*/
         }
-        */
         return false
     }
 

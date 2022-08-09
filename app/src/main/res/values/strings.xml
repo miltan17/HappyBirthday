@@ -4,4 +4,5 @@
     <string name="signature_text">Form Udoy!</string>
     <string name="menu_drawer_open">Drawer Open</string>
     <string name="menu_drawer_close">Drawer Close</string>
+    <string name="roll">ROLL</string>
 </resources>
